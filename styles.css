@@ -1,0 +1,255 @@
+/* CSSのリセット（消さないでください） */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div, img,xmp,pre{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-size:0px; /*inline-block要素の改行により、隙間ができる。この隙間は文字の性質を持っているので、font-sizeを初期化してあげると、消える。*/
+  line-height:2;
+}
+
+.container{
+  padding:0 3%;
+}
+
+/* top部分 */
+.top-wrapper{
+  text-align:center;
+}
+.top-logo{
+  display:inline-block; /*inline-block要素にすることで、子のblock要素の大きさになる*/
+  padding-top:40px;
+  padding-bottom:40px;
+}
+.top-logo img{
+  display:block; /*block要素にすることで、親のinline-block要素が大きさを合わせる*/
+}
+.top-img{
+  /* linkとの境界用 */
+  padding-bottom:30px;
+}
+.top-img img{
+  width:100%; /*img要素に100%を設定すると画面ちょうどにおさまる*/
+  border-radius:10px;
+}
+
+/*link部分*/
+.link{
+  height:50px;
+  margin-top:10px;
+  margin-bottom:35px;
+}
+.link-list ul {
+  list-style-type:none;
+  text-align:center;
+}
+.link-list li {
+  display:inline-block;
+}
+.link-list a{
+  display:block;
+  padding:10px 30px;
+  margin-right:1px;
+  font-size:18px;
+  text-decoration:none; /*アンダーラインの削除*/
+  color: #666;
+}
+.link-list a:hover{
+  transition:0.3s;
+  color:#d08047;
+  border-bottom:4px solid #d08047;
+}
+
+/* cont部分 */
+.contents-wrapper{
+  margin-bottom:30px;
+}
+.contents-title{ /*オレンジ色の部分*/
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:20px;
+  margin-bottom:20px;
+  color:white;
+  border-radius:10px;
+  background-color: #d08047;
+}
+.contents-title h1{
+  font-size:16px;
+  font-weight: normal;
+}
+.contents{
+  font-size:16px;
+  color: #666;
+  padding-left:20px;
+  padding-right:20px;
+}
+.contents dt{
+  float:left;
+  /* clear:left; */
+}
+.contents dd{
+  margin-left:8em;
+}
+.contents-subtitle{
+  padding:8px 20px;
+  margin-bottom:10px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  color: #666;
+}
+.contents-subtitle h2{
+  font-size:16px;
+  font-weight: normal;
+}
+.contents2{
+  margin-bottom:15px;
+}
+.contents2 a{
+  color: #666;
+}
+.contents2 a:hover{
+  transition:0.3s;
+  color:#d08047;
+}
+.contents strong{
+  font-size:16px;
+  font-weight:normal;
+  color:#d08047;
+}
+
+footer{
+  text-align:center;
+  margin-top:55px;
+  margin-bottom:10px;
+  line-height:2;
+  color: #666;
+}
+.footer-p1{
+  font-size:13px;
+}
+.footer-p2{
+  font-size:12px;
+}
+footer a{
+  color: #666;
+  text-decoration: none;
+}
+
+
+/* about.html */
+.about_top-logo{
+  display:inline-block; /*inline-block要素にすることで、子のblock要素の大きさになる*/
+  padding-top:40px;
+  padding-bottom:20px;
+}
+.a_contents-wrapper{
+  /* margin-top:20px; */
+  margin-bottom:10px;
+}
+.table-contents{
+  font-size:16px;
+  color: #666;
+}
+table {
+  color: #666;
+  border-collapse: collapse;
+  width:100%;
+  margin-bottom:30px;
+}
+table th, table td {
+  border: solid 1px #999;
+  height:50px;
+}
+table th{
+  background-color:#eee;
+  font-weight:normal;
+  text-align:left;
+  height:50px;
+  /* padding-left:10px; */
+  text-indent: 1em;
+}
+.a_contents{
+  margin-bottom:20px;
+}
+.a_container{
+  margin-bottom:50px;
+}
+.capt{
+  width:30%;
+  text-align:center;
+}
+.sent{
+  padding-left:1em;
+}
+.a_contents a{
+  color: #666;
+}
+.a_contents a:hover{
+  transition:0.3s;
+  color:#d08047;
+}
+.a_contents2 p{
+  margin-bottom:15px;
+}
+.a_contents2 span{
+  background-color: #eee;
+  padding:5px 10px;
+  border-radius:4px;
+}
+.a_contents3 p{
+  margin-bottom:20px;
+}
+.color{
+  color:#d08047;
+}
+
+/* Gallery */
+.g_contents :first-child{
+  margin-top:21px;
+}
+.g_contents{
+  border-bottom:1px solid #999;
+  height:165px;
+}
+.g_contents img{
+  float:left;
+  /* padding-bottom:20px; */
+}
+.g_explain{
+  display:inline-block; 
+  /*imgがfloatになっているため、divが重なっている。inline-block要素にすれば、floatと同じz軸に上がる*/
+  margin-left:1em;
+}
+.g_explain h2{
+  font-size:16px;
+  font-weight:normal;
+  color:#d08047;
+}
+.g_footer{
+  margin-top:40px;
+}
+
+.l_contents-wrapper{
+  margin-bottom:0px;
+}
+.l_table-contents{
+  font-size:16px;
+  color: #666;
+}
+.l_table-contents th{
+  color:rgb(102 102 102);
+  /* font-weight:600; */
+}
+.l_capt{
+  /* padding-top:5px; */
+  text-align:center;
+  width:31%;
+}
+.l_capt img{
+  width:90%;
+} 
+.l_capt a{
+  color:#666;
+}
